@@ -48,7 +48,17 @@ char * extractTokens(char* str){
 
 	printf("\n----------------------------/extracting tokens/\n");	
 	char* tokens[100];
-	
-	printf("----------------------------/extracting completed/\n");
+	int i = 0;
+	char* strPtr = str;
+	while(1){
+		
+		if(*strPtr == '\0'){
+			break;
+		}
+		char ch = *strPtr;
+		
+		strPtr++;
+	}
+	printf("\n----------------------------/extracting completed/\n");
 	return *tokens;
 }
