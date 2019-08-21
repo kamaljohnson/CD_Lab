@@ -2,16 +2,16 @@
 #include<string.h>
 #include<stdlib.h>
 
-char* readFile(char* filename);	//reads the file and returns the string in the file
-void extractTokens(char* tokens[], char* str);	//read the string and extracts the tokens from the string
+char * readFile(char* filename);	//reads the file and returns the string in the file
+char * extractTokens(char* str);	//read the string and extracts the tokens from the string
 
 void main() {
 	char* str = readFile("file.text");
-
+	extractTokens(str);
 	printf("data in the file: %s\n", str);
 }
 
-char* readFile(char* filename) {
+char * readFile(char* filename) {
 	printf("\n----------------------------/reading from %s/\n", filename);
 	char* str;
 	
@@ -44,6 +44,11 @@ char* readFile(char* filename) {
 	return str;
 }
 
-void extractTokens(char* tokens[], char* str){
+char * extractTokens(char* str){
 
+	printf("\n----------------------------/extracting tokens/\n");	
+	char* tokens[100];
+	
+	printf("----------------------------/extracting completed/\n");
+	return *tokens;
 }
